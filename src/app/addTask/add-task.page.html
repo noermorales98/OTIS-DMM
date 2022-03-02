@@ -1,0 +1,27 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div>
+    <div><ion-title>Agrergar nueva tarea</ion-title></div>
+    <div>
+      <input id="nombreTareaInput" type="text" placeholder="Nombre">
+    </div>
+    <div>
+      <input id="fechaTareaInput" type="text" placeholder="Fecha">
+    </div>
+    <div>
+      <input id="decripcionTareaInput" type="text" placeholder="Descripción">
+    </div>
+  </div>
+  <ion-buttons slot="end">
+    <ion-button/>Agregar
+  </ion-buttons>
+
+</ion-content>
