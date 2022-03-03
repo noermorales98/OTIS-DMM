@@ -6,14 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  tareas: Tareas = {
+  totaltareas: Tareas = {
     id: 1,
     name: 'Noeli',
     total: 10,
   };
 
-  constructor() {}
-
+  constructor( ) {}
 }
 
 export interface Tareas {

@@ -1,10 +1,8 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar id="barra">
+    <ion-icon name="menu-outline"></ion-icon>
     <ion-avatar slot="end">
       <img src="/assets/user.png">
-    </ion-avatar>
-    <ion-avatar slot="start">
-      <img src="/assets/burger.png">
     </ion-avatar>
   </ion-toolbar>
   <ion-header collapse="condense">
@@ -12,8 +10,9 @@
 
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
-  <div>
+  <div id="container">
     <ion-chip color="primary" mode="=android" outline="true" color="primary">
       <ion-label>Hoy</ion-label>
     </ion-chip>
@@ -25,30 +24,35 @@
     </ion-chip>
   </div>
 
-  <div>
-    <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"><ion-icon name="book-outline"></ion-icon>Tareas pendientes</a>
-    <!-- <label> <ion-avatar><img src="/assets/user.png"></ion-avatar> Tareas pendientes</label> -->
+  <div class="tarjetita">
+    <a href="https://ionicframework.com/docs/components"><ion-icon name="book-outline"></ion-icon>Tareas pendientes</a>
+    <ion-card class="info">
+      <ion-card-header>
+        <ion-card-title>Tareas pendientes</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{totaltareas.total}}
+      </ion-card-content>
+    </ion-card>
   </div>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Tareas pendiente</ion-card-title>
-    </ion-card-header>
 
-    <ion-card-content>
-      {{tareas.total}}
-    </ion-card-content>
-  </ion-card>
 
-  <div>
+  <div class="contenido">
     <strong>Hoy</strong>
-    <ion-list>
-      tareas
-    </ion-list>
+    <ion-item *ngFor="let aa of[1,1]">
+      <ion-avatar slot="start">
+        <ion-icon name="ellipse"></ion-icon>
+      </ion-avatar>
+      <ion-label class="tareas">
+        <h2>Hola</h2>
+        <h3>I'm a big deal</h3>
+        <p>Listen, I've had a pretty messed up day...</p>
+      </ion-label>
+    </ion-item>
   </div>
 
-  <!-- <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div> -->
+  <div class="agregar">
+    <ion-fab-button id="botoncito">+</ion-fab-button>
+  </div>
 </ion-content>
