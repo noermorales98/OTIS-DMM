@@ -1,11 +1,15 @@
 #container {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-ion-toolbar {
-  position: relative;
-  height: 60px;
+#container ion-chip{
+  margin-right: 10px;
+  margin-left: 10px;
 }
+
+
 
 ion-toolbar ion-avatar{
   margin-top: auto;
@@ -22,23 +26,31 @@ ion-toolbar ion-icon{
 
 .info ion-card-title{
   display: flex;
-  width: 10%;
+  width: 40%;
   float: left;
+  //vertical-align: middle;
 }
 
+//numero total de tareas CIRCULAR
 .info ion-card-content{
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   float: right;
   background: #3a7be0;
   border-radius: 50%;
   align-items: center;
   text-align: center;
-
-
+  //display: block;
+  //vertical-align: middle;
+  font-size: 70px;
+  top: 20px;
+  margin-right: 40px;
 }
 
+#circulo{
+  top: 100px;
+}
 
 
 .tarjetita a{
@@ -54,9 +66,24 @@ ion-toolbar ion-icon{
   margin-left: 20px;
 }
 
+.tarjetita ion-card-content{
+  color: white;
+  font-weight: bolder;
+  align-items: center;
+}
+
+
+
+.centrar ion-card-title {
+  margin-left: 30px;
+  position: absolute;
+  top: 80px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
 
 .agregar{
-  color: #2dd36f;
   position:fixed;
   width:60px;
   height:60px;
@@ -65,3 +92,4 @@ ion-toolbar ion-icon{
   border-radius:50px;
   text-align:center;
 }
+

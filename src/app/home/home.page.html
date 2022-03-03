@@ -1,22 +1,25 @@
+<!--Esta es la parte de la barra de arriba-->
 <ion-header [translucent]="true">
   <ion-toolbar id="barra">
+    <!--Este es el menu de hamburguesa del lado izquierdo-->
     <ion-icon name="menu-outline"></ion-icon>
+    <!--Este es el icono del usuario de lado derecho-->
     <ion-avatar slot="end">
       <img src="/assets/user.png">
     </ion-avatar>
   </ion-toolbar>
   <ion-header collapse="condense">
   </ion-header>
-
 </ion-header>
 
-
+<!--este es todo el contenido que se mostrara en pantalla-->
 <ion-content [fullscreen]="true">
+  <!--este es el menu de los 3 botones = hoy, esta semana, y todo-->
   <div id="container">
     <ion-chip color="primary" mode="=android" outline="true" color="primary">
       <ion-label>Hoy</ion-label>
     </ion-chip>
-    <ion-chip color="primary" mode="=android" outline="true" color="primary">
+    <ion-chip id="week" color="primary" mode="=android" outline="true" color="primary">
       <ion-label>Esta semana</ion-label>
     </ion-chip>
     <ion-chip color="primary" mode="=android" outline="true" color="primary">
@@ -24,20 +27,29 @@
     </ion-chip>
   </div>
 
+  <!--aqui esta la tarjetita que mostrara las tareas-->
   <div class="tarjetita">
+    <!--es el texto cabezera Tareas pendientes-->
     <a href="https://ionicframework.com/docs/components"><ion-icon name="book-outline"></ion-icon>Tareas pendientes</a>
-    <ion-card class="info">
-      <ion-card-header>
-        <ion-card-title>Tareas pendientes</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        {{totaltareas.total}}
-      </ion-card-content>
-    </ion-card>
+    <!--aqui esta el ionc-card -->
+      <ion-card class="info">
+        <div class="centrar">
+          <div id="titulo-card">
+            <ion-card-header>
+              <ion-card-title>Total de tareas</ion-card-title>
+            </ion-card-header>
+          </div>
+          <div id="circulo">
+            <ion-card-content>
+              {{totaltareas.total}}
+            </ion-card-content>
+          </div>
+        </div>
+      </ion-card>
   </div>
 
 
-
+  <!--este es el contenido que se aloja en la seccion: HOY-->
   <div class="contenido">
     <strong>Hoy</strong>
     <ion-item *ngFor="let aa of[1,1]">
