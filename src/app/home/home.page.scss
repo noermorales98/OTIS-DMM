@@ -63,6 +63,7 @@ ion-toolbar ion-icon{
 }
 
 .contenido strong{
+  position: relative;
   margin-left: 20px;
 }
 
@@ -83,13 +84,20 @@ ion-toolbar ion-icon{
 }
 
 
-.agregar{
+#botoncito{
   position:fixed;
+  float: right;
   width:60px;
   height:60px;
   bottom:40px;
   right:40px;
   border-radius:50px;
   text-align:center;
+  z-index: 1;
 }
+
+#items{
+  position: relative;
+}
+
 
