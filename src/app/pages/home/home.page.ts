@@ -12,7 +12,7 @@ interface Componente {
 export class HomePage {
 
   componentes: Componente[]=[{
-    redirectTo: 'add-task'
+    redirectTo: '/add-task'
   }];
 
 
@@ -22,7 +22,7 @@ export class HomePage {
     total: 10,
   };
   todo: Componente[]=[{
-    redirectTo: 'to-do'
+    redirectTo: '/to-do'
   }];
 
   constructor() {}

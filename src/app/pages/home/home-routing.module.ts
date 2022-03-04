@@ -11,11 +11,11 @@ const routes: Routes = [
     component: HomePage,
   },
   {
-    path:'add-task',
+    path:'/add-task',
     component: AddTaskPageModule
   },
   {
-    path:'to-do',
+    path:'/to-do',
     component: ToDoPageModule
   }
 ];
