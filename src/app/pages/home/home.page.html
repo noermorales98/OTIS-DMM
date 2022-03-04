@@ -23,13 +23,13 @@
 <ion-content [fullscreen]="true">
   <!--este es el menu de los 3 botones = hoy, esta semana, y todo-->
   <div id="container">
-    <ion-chip color="primary" outline="true" color="white">
+    <ion-chip size="large" color="primary" outline="true" color="white">
       <ion-label [routerLink]="g.redirectTo" *ngFor="let g of todo" >Hoy</ion-label>
     </ion-chip>
-    <ion-chip id="week" color="primary" outline="true" color="white">
+    <ion-chip size="large" id="week" color="primary" outline="true" color="white">
       <ion-label>Esta semana</ion-label>
     </ion-chip>
-    <ion-chip color="primary" outline="true" color="white">
+    <ion-chip size="large" color="primary" outline="true" color="white">
       <ion-label>Todo</ion-label>
     </ion-chip>
   </div>
