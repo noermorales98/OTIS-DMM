@@ -83,12 +83,17 @@ ion-toolbar ion-icon{
 
 .tarjetita ion-card{
   height: 220px;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 //titulo que dice HOY
 .contenido strong{
+  margin-bottom: 15px;
+  margin-top: 15px;
   position: relative;
-  margin-left: 20px;
+  font-size: 25px;
+  margin-left: 50px;
 }
 
 .contenido ion-icon{
@@ -97,8 +102,10 @@ ion-toolbar ion-icon{
 }
 
 .contenido ion-item{
-  margin-left: 10px;
-  margin-right: 15px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 80px;
+
 }
 
 .tarjetita ion-card-content{
