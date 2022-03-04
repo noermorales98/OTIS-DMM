@@ -4,9 +4,14 @@
   margin-bottom: 10px;
 }
 
+#barra{
+  height: 55px;
+  background:none;
+}
+
+
 #container ion-chip{
-  margin-right: 10px;
-  margin-left: 10px;
+  size: 50px;
 }
 
 
@@ -52,10 +57,20 @@ ion-toolbar ion-icon{
   top: 100px;
 }
 
+//
+.tarjetita ion-icon{
+  color: white;
+  align-items: center;
+  vertical-align: middle;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
 
 .tarjetita a{
+  color: white;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .tarjetita ion-card{
@@ -72,6 +87,8 @@ ion-toolbar ion-icon{
   font-weight: bolder;
   align-items: center;
 }
+
+
 
 
 

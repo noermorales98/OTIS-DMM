@@ -1,5 +1,5 @@
 <!--Esta es la parte de la barra de arriba-->
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar id="barra">
     <!--Este es el menu de hamburguesa del lado izquierdo-->
     <ion-icon name="menu-outline"></ion-icon>
@@ -8,21 +8,19 @@
       <img src="/assets/user.png">
     </ion-avatar>
   </ion-toolbar>
-  <ion-header collapse="condense">
-  </ion-header>
 </ion-header>
 
 <!--este es todo el contenido que se mostrara en pantalla-->
 <ion-content [fullscreen]="true">
   <!--este es el menu de los 3 botones = hoy, esta semana, y todo-->
   <div id="container">
-    <ion-chip color="primary" mode="=android" outline="true" color="primary">
+    <ion-chip color="primary" outline="true" color="white">
       <ion-label>Hoy</ion-label>
     </ion-chip>
-    <ion-chip id="week" color="primary" mode="=android" outline="true" color="primary">
+    <ion-chip id="week" color="primary" outline="true" color="white">
       <ion-label>Esta semana</ion-label>
     </ion-chip>
-    <ion-chip color="primary" mode="=android" outline="true" color="primary">
+    <ion-chip color="primary" outline="true" color="white">
       <ion-label>Todo</ion-label>
     </ion-chip>
   </div>
@@ -57,9 +55,9 @@
         <ion-icon name="ellipse"></ion-icon>
       </ion-avatar>
       <ion-label class="tareas">
-        <h2>Hola</h2>
-        <h3>I'm a big deal</h3>
-        <p>Listen, I've had a pretty messed up day...</p>
+        <h2>Nombre</h2>
+        <h3>Fecha</h3>
+        <p>Descripcion de la tarea.</p>
       </ion-label>
     </ion-item>
   </div>
