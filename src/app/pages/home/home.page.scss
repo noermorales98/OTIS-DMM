@@ -6,7 +6,6 @@
 
 #barra{
   height: 55px;
-  background:none;
 }
 
 
@@ -80,6 +79,15 @@ ion-toolbar ion-icon{
 .contenido strong{
   position: relative;
   margin-left: 20px;
+}
+
+.contenido ion-icon{
+  height: 10px;
+  width: 10px;
+}
+
+.contenido ion-item{
+  margin-left: 10px;
 }
 
 .tarjetita ion-card-content{

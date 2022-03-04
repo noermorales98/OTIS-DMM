@@ -5,7 +5,7 @@
     <ion-icon name="menu-outline"></ion-icon>
     <!--Este es el icono del usuario de lado derecho-->
     <ion-avatar slot="end">
-      <img src="/assets/user.png">
+      <img src="/src/assets/user.png">
     </ion-avatar>
   </ion-toolbar>
 </ion-header>
@@ -15,7 +15,7 @@
   <!--este es el menu de los 3 botones = hoy, esta semana, y todo-->
   <div id="container">
     <ion-chip color="primary" outline="true" color="white">
-      <ion-label>Hoy</ion-label>
+      <ion-label [routerLink]="g.redirectTo" *ngFor="let g of todo" >Hoy</ion-label>
     </ion-chip>
     <ion-chip id="week" color="primary" outline="true" color="white">
       <ion-label>Esta semana</ion-label>
@@ -50,7 +50,7 @@
   <!--este es el contenido que se aloja en la seccion: HOY-->
   <div class="contenido">
     <strong>Hoy</strong>
-    <ion-item id="items" *ngFor="let aa of[1,1,1,1]">
+    <ion-item color="transparent" id="items" *ngFor="let aa of[1,1,1,1]">
       <ion-avatar slot="start">
         <ion-icon name="ellipse"></ion-icon>
       </ion-avatar>
@@ -63,6 +63,6 @@
   </div>
 
   <div class="agregar">
-    <ion-fab-button id="botoncito">+</ion-fab-button>
+    <ion-fab-button [routerLink]="c.redirectTo" *ngFor="let c of componentes" id="botoncito">+</ion-fab-button>
   </div>
 </ion-content>

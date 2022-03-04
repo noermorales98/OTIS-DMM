@@ -6,10 +6,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
 
-  <div>
-    <div><ion-title>Agrergar nueva tarea</ion-title></div>
+  <div id="container">
+    <div>
+      <ion-title>Agrergar nueva tarea</ion-title>
+    </div>
     <div>
       <input id="nombreTareaInput" type="text" placeholder="Nombre">
     </div>
@@ -19,9 +21,12 @@
     <div>
       <input id="decripcionTareaInput" type="text" placeholder="Descripción">
     </div>
+    <div>
+      <ion-buttons>
+        <ion-button>Agregar</ion-button>
+      </ion-buttons>
+    </div>
   </div>
-  <ion-buttons slot="end">
-    <ion-button/>Agregar
-  </ion-buttons>
+
 
 </ion-content>
