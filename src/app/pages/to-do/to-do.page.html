@@ -1,12 +1,25 @@
-<ion-header>
+<ion-header >
   <ion-toolbar>
-    <ion-title>toDo</ion-title>
-    <ion-buttons>
-      <ion-back-button text="regresar" defaultHref="/"></ion-back-button>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <div id="container">
+    <div>
+      <h1>Tareas</h1>
+      <h1>para hoy</h1>
+    </div>
+    <ionitem *ngFor="let a of [1,1,1]"></ionitem>
+    <div>
+      <ion-buttons>
+        <ion-button>Agregar</ion-button>
+      </ion-buttons>
+    </div>
+  </div>
+
 
 </ion-content>
