@@ -18,7 +18,19 @@ const routes: Routes = [
   {
     path: 'add-task',
     loadChildren: () => import('./pages/add-task/add-task.module').then( m => m.AddTaskPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'task-list',
+    loadChildren: () => import('./pages/task-list/task-list.module').then( m => m.TaskListPageModule)
   }
+
 
 
 
