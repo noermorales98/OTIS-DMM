@@ -1,0 +1,63 @@
+ion-toolbar {
+  --background: transparent !important;
+  --ion-color-base: transparent !important;
+  --border-color: transparent;
+  --background-color: transparent !important;
+}
+
+/*Boton de back*/
+.backButton{
+  height: 80px;
+  width: 80px;
+
+}
+
+/*Titulos*/
+.titulo{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+
+}
+/*Contenedor de titulo*/
+.titles{
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+/*Contenedor de email para registrate*/
+.mailInputContainerRegister{
+  width: 80%;
+  margin-left: 35px;
+}
+/*contenedor de password*/
+.passInputContainer{
+  width:80%;
+  margin-left: 35px;
+
+}
+/*contenedor de confimacion de password*/
+.passConfirmInputContainer{
+  width:80%;
+  margin-left: 35px;
+}
+/*inputs en general*/
+.inputText{
+  background-color: white;
+  border-radius: 10px;
+  color: #000000;
+}
+/*boton de registro*/
+.registrarButton{
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.buttons{
+
+}
+
+
+
+
+

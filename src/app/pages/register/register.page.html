@@ -1,12 +1,47 @@
-<ion-header >
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-label id="tituloRegister"> Registro</ion-label>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button class="backButton"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <!--Titulo de la página-->
+  <div class="titles">
+    <h1 class="titulo">Crea tu cuenta</h1>
+  </div>
+
+  <!--Sección para inputs de correo y contraseña-->
+  <ion-item class="mailInputContainerRegister">
+
+    <!--caracteres maximo de 50, restringir tipo de entrada a email-->
+    <ion-input maxlength="50" class="inputText" type="email" placeholder="Correo"></ion-input>
+  </ion-item>
+  <br>
+
+  <!--Caracteres maximos 16 min 6 tipo password-->
+  <ion-item class="passInputContainer">
+    <ion-input maxlength="16" minlength="6" class="inputText" type="password" placeholder="Contraseña"></ion-input>
+  </ion-item>
+  <br>
+
+  <!--Caracteres maximos 16 min 6 tipo password-->
+  <ion-item class="passConfirmInputContainer">
+    <ion-input maxlength="16" minlength="6" class="inputText" type="password" placeholder="Confirmar contraseña"></ion-input>
+  </ion-item>
+
+  <!--Boton para la confirmacion del registro-->
+  <ion-list lines="none">
+    <ion-buttons class="ion-justify-content-center">
+      <ion-item>
+        <ion-button class="registrarButton">Registrate</ion-button>
+      </ion-item>
+    </ion-buttons>
+  </ion-list>
+
+
 </ion-content>
+
+
