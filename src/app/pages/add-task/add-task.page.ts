@@ -7,17 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddTaskPage implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-export class MiComponente {
   //Esto se lo pasamos a la vista.
   agnosPersonalizados = [2020, 2016, 2008, 2004, 2000, 1996];
   nombresDiasCortados = ['lun', 'mar', 'mie', 'jue', 'vie', 'sab', 'dom'];
   opcionesPersonalizas: any;
+
   constructor() {
     this.opcionesPersonalizas = {
       buttons: [{
@@ -30,6 +24,10 @@ export class MiComponente {
           return false;
         }
       }]
-    }
+    };
+  }
+
+
+  ngOnInit() {
   }
 }
