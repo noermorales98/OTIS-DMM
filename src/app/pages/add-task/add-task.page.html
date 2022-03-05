@@ -10,20 +10,18 @@
 <ion-content>
 
   <div id="container">
-    <div>
-      <input id="nombreTareaInput" type="text" placeholder="Nombre">
-    </div>
-    <div>
-      <input id="fechaTareaInput" type="text" placeholder="Fecha">
-    </div>
-    <div>
-      <input id="decripcionTareaInput" type="text" placeholder="Descripción">
-    </div>
-    <div>
-      <ion-buttons>
-        <ion-button>Agregar</ion-button>
-      </ion-buttons>
-    </div>
+    <ion-item>
+      <ion-label position="stacked"></ion-label>
+      <ion-input placeholder="Nombre"></ion-input>
+      <strong>Fecha limite</strong>
+        <ion-item>
+
+        <ion-datetime displayFormat="MMMM" value="2012-12-15T13:47:20.789"></ion-datetime>
+
+      </ion-item>
+
+      <ion-input placeholder="Descripcion de tarea"></ion-input>
+    </ion-item>
   </div>
 
 
