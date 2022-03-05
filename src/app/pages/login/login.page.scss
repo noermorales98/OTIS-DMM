@@ -1,21 +1,23 @@
 /*titulos*/
 .titulo{
   margin-left: 40px;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
 }
 /*Contenedor de titulo*/
 .titles{
   margin-top: 150px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 /*contenedor de email*/
 .mailInputContainer{
   width: 80%;
+  margin-left: 35px;
 }
 /*contenedor de password*/
 .passInputContainer{
   width:80%;
+  margin-left: 35px;
 }
 /*inputs en general*/
 .inputText{
@@ -36,4 +38,7 @@
   color: white;
   border-radius: 5px;
   padding: 5px;
+}
+.buttons{
+  margin-left: 45px;
 }
