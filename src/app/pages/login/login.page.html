@@ -1,9 +1,35 @@
-<ion-header>
+<!--<ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    &lt;!&ndash;<ion-title>login</ion-title>&ndash;&gt;
   </ion-toolbar>
-</ion-header>
+</ion-header>-->
 
 <ion-content>
+  <div class="titles">
+    <!--titulo de la página-->
+    <h1 class="titulo">Para continuar,</h1>
+    <h1 class="titulo">inicie sesión</h1>
+  </div>
 
+<!--Sección para inputs de correo y contraseña-->
+  <ion-item class="mailInputContainer">
+    <!--caracteres maximo de 50, restringir tipo de entrada a email-->
+    <ion-input maxlength="50" class="inputText" type="email" placeholder="Correo"></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="passInputContainer">
+    <!--Caracteres maximos 16 min 6 tipo password-->
+    <ion-input maxlength="16" minlength="6" class="inputText" type="password" placeholder="Contraseña"></ion-input>
+  </ion-item>
+  <br>
+  <!--sección para botones de iniciar y registro-->
+    <ion-buttons>
+      <ion-item>
+        <ion-button class="iniciarButton">Iniciar</ion-button>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-button class="registrarButton">Registrate</ion-button>
+      </ion-item>
+    </ion-buttons>
 </ion-content>
