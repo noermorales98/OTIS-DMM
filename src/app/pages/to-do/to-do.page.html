@@ -13,13 +13,28 @@
       <h1>Tareas</h1>
       <h1>para hoy</h1>
     </div>
-    <ionitem *ngFor="let a of [1,1,1]"></ionitem>
-    <div>
-      <ion-buttons>
-        <ion-button>Agregar</ion-button>
-      </ion-buttons>
+
+
+      <div class="contenido">
+        <ion-item id="items" *ngFor="let aa of[1,1,1,1]">
+          <ion-card>
+            <ion-item>
+              <ion-icon  name="ellipse"> slot="start"></ion-icon>
+              <ion-label>Proyecto de IoT</ion-label>
+              <ion-button fill="outline" slot="end">Ver</ion-button>
+            </ion-item>
+
+            <ion-card-content>
+              <ion-icon color="black" name="calendar"> slot="start"></ion-icon>
+              24/02/2022
+            </ion-card-content>
+          </ion-card>
+
+        </ion-item>
+      </div>
+
     </div>
-  </div>
+
 
 
 </ion-content>

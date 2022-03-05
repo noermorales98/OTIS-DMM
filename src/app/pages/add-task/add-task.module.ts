@@ -17,4 +17,5 @@ import { AddTaskPage } from './add-task.page';
   ],
   declarations: [AddTaskPage]
 })
-export class AddTaskPageModule {}
+export class AddTaskPageModule {
+}

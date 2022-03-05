@@ -53,16 +53,15 @@ ion-toolbar ion-icon{
   background: #0007AC;
   border-radius: 50%;
   align-items: center;
-  text-align: center;
-  //display: block;
-  //vertical-align: middle;
+  justify-content: center;
   font-size: 70px;
   top: 20px;
   margin-right: 40px;
 }
 
-#circulo{
+.circulo{
   top: 100px;
+  align-items: center;
 }
 ion-card{
   border-radius: 50px;
