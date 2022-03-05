@@ -1,0 +1,39 @@
+/*titulos*/
+.titulo{
+  margin-left: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+/*Contenedor de titulo*/
+.titles{
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+/*contenedor de email*/
+.mailInputContainer{
+  width: 80%;
+}
+/*contenedor de password*/
+.passInputContainer{
+  width:80%;
+}
+/*inputs en general*/
+.inputText{
+  background-color: white;
+  border-radius: 10px;
+  color: #000000;
+}
+/*botón de iniciar*/
+.iniciarButton{
+  background-color: #2027a8;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+/*boton de registro*/
+.registrarButton{
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
