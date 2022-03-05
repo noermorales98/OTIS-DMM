@@ -24,7 +24,9 @@ export class HomePage {
   todo: Componente[]=[{
     redirectTo: '/to-do'
   }];
-
+  info: Componente[]=[{
+    redirectTo:'/task-info'
+  }];
   constructor() {}
 
 }

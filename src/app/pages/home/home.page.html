@@ -21,16 +21,17 @@
 
 <!--este es todo el contenido que se mostrara en pantalla-->
 <ion-content [fullscreen]="true">
+
   <!--este es el menu de los 3 botones = hoy, esta semana, y todo-->
   <div id="container">
     <ion-chip size="large">
       <ion-label [routerLink]="g.redirectTo" *ngFor="let g of todo" >Hoy</ion-label>
     </ion-chip>
     <ion-chip size="large" id="week">
-      <ion-label>Esta semana</ion-label>
+      <ion-label [routerLink]="c.redirectTo" *ngFor="let c of todo">Esta semana</ion-label>
     </ion-chip>
     <ion-chip size="large">
-      <ion-label>Todo</ion-label>
+      <ion-label [routerLink]="l.redirectTo" *ngFor="let l of todo">Todo</ion-label>
     </ion-chip>
   </div>
 
@@ -59,9 +60,9 @@
   <!--este es el contenido que se aloja en la seccion: HOY-->
   <div class="contenido">
     <strong>Hoy</strong>
-    <ion-item id="items" *ngFor="let aa of[1,1,1,1]">
+    <ion-item id="items" *ngFor="let aa of[1,1,1,1]" >
       <ion-icon name="ellipse"></ion-icon>
-      <ion-label class="tareas">
+      <ion-label class="tareas" [routerLink]="l.redirectTo" *ngFor="let l of info">
         <h2>Nombre</h2>
         <h3>Fecha</h3>
         <p>Descripcion de la tarea.</p>
