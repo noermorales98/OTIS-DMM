@@ -13,10 +13,31 @@ ion-item strong{
   margin-left: 10px;
 }
 
-//texto que dice nombre y descripcion
-ion-item ion-input{
+//texto que dice nombre
+  ion-item ion-input{
   margin-bottom: 15px;
   margin-top: 15px;
   font-size: 18px;
   margin-left: 10px;
+}
+
+//Campo que dice descripción
+ion-item ion-textarea{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+//Botón de agregar tarea
+ion-button{
+  background-color: #0007AC;
+  position:fixed;
+  float: right;
+  width:auto;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  text-align:center;
+  z-index: 1;
 }

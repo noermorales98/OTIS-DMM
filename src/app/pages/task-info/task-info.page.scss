@@ -1,0 +1,48 @@
+
+ion-item ion ion-card-content {
+  ion-card-content{
+    margin-top: 20px;
+    align-self: center;
+    align-items: center;
+  }
+}
+
+//texto que dice nombre
+ion-item ion-input{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+//Campo que dice descripción
+ion-item ion-textarea{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.actualizar ion-item{
+  margin-top: 20px;
+  margin-left: 55px;
+  margin-right: 55px;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-item ion-button{
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+ion-button{
+  height: 40px;
+  width: 100px;
+  align-self: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  align-content: center;
+}

@@ -10,8 +10,40 @@
 <!--aqui ira todo el contenido-->
 <ion-content>
 
-  <div id="container">
+  <div id="container"> <!--Contenido detro de container-->
+    <ion-item>
+      <ion-label position="stacked"></ion-label>
 
+      <ion-input placeholder="Nombre de la tarea"></ion-input>
+
+
+        <ion-item>
+          <ion-label>Fecha límite</ion-label>
+          <ion-card-content>
+            <ion-icon color="black" name="calendar"> slot="start"></ion-icon>
+            {{fecha}}
+          </ion-card-content>
+        </ion-item>
+
+
+
+
+      <ion-textarea rows="6" cols="20" placeholder="Descripción"></ion-textarea>
+
+    </ion-item>
+
+  </div>
+  <!--Botón de agregar tarea-->
+  <div class="actualizar" >
+    <ion-item>
+    <ion-button color="secondary">
+      Actualizar
+    </ion-button>
+
+    <ion-button  color="danger">
+       Borrar
+    </ion-button>
+    </ion-item>
   </div>
 
 
