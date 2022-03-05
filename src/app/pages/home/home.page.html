@@ -23,13 +23,13 @@
 <ion-content [fullscreen]="true">
   <!--este es el menu de los 3 botones = hoy, esta semana, y todo-->
   <div id="container">
-    <ion-chip size="large" color="primary" outline="true" color="white">
+    <ion-chip size="large">
       <ion-label [routerLink]="g.redirectTo" *ngFor="let g of todo" >Hoy</ion-label>
     </ion-chip>
-    <ion-chip size="large" id="week" color="primary" outline="true" color="white">
+    <ion-chip size="large" id="week">
       <ion-label>Esta semana</ion-label>
     </ion-chip>
-    <ion-chip size="large" color="primary" outline="true" color="white">
+    <ion-chip size="large">
       <ion-label>Todo</ion-label>
     </ion-chip>
   </div>
@@ -37,7 +37,7 @@
   <!--aqui esta la tarjetita que mostrara las tareas-->
   <div class="tarjetita">
     <!--es el texto cabezera Tareas pendientes-->
-    <a href="https://ionicframework.com/docs/components"><ion-icon name="book-outline"></ion-icon>Tareas pendientes</a>
+    <a href="#"><ion-icon name="filter-circle-sharp"></ion-icon>Tareas pendientes</a>
     <!--aqui esta el ionc-card -->
       <ion-card class="info">
         <div class="centrar">
@@ -59,10 +59,8 @@
   <!--este es el contenido que se aloja en la seccion: HOY-->
   <div class="contenido">
     <strong>Hoy</strong>
-    <ion-item color="transparent" id="items" *ngFor="let aa of[1,1,1,1]">
-      <ion-avatar slot="start">
-        <ion-icon name="ellipse"></ion-icon>
-      </ion-avatar>
+    <ion-item id="items" *ngFor="let aa of[1,1,1,1]">
+      <ion-icon name="ellipse"></ion-icon>
       <ion-label class="tareas">
         <h2>Nombre</h2>
         <h3>Fecha</h3>
@@ -72,6 +70,6 @@
   </div>
 
   <div class="agregar">
-    <ion-fab-button [routerLink]="c.redirectTo" *ngFor="let c of componentes" id="botoncito">+</ion-fab-button>
+    <ion-fab-button color="dark" [routerLink]="c.redirectTo" *ngFor="let c of componentes" id="botoncito">+</ion-fab-button>
   </div>
 </ion-content>
