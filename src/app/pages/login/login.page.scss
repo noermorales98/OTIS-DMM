@@ -9,7 +9,6 @@
   margin-left: 40px;
   font-size: 40px;
   font-weight: bolder;
-  font-family: 'Roboto';
 }
 /*Contenedor de titulo*/
 .titles{
@@ -22,9 +21,17 @@
 ion-item{
   margin: 0px 0px 10px;
   width: 100%;
-  background-color: none;
   --ion-background-color: #E5E5E5;
   border-radius: 10px;
+  color: #0007AC;
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-items{
+    color: black;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+  }  
 }
 
 ion-buttons{
@@ -37,7 +44,6 @@ ion-buttons{
 }
 
 ion-button{
-  background-color: aqua;
   margin: 0px 0px 10px;
   border-radius: 10px;
   width: 100%;
@@ -53,6 +59,8 @@ ion-button{
 }
 
 #registrarButton{
-  background-color: #000000;
+  //background-color: #000000;
   color: white;
+  background-color:  var(--ion-color-dark);
 }
+
