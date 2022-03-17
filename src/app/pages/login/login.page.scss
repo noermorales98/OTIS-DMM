@@ -1,44 +1,58 @@
+.container{
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
 /*titulos*/
 .titulo{
   margin-left: 40px;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: bolder;
+  font-family: 'Roboto';
 }
 /*Contenedor de titulo*/
 .titles{
   margin-top: 150px;
   margin-bottom: 100px;
 }
-/*contenedor de email*/
-.mailInputContainer{
-  width: 80%;
-  margin-left: 35px;
-}
-/*contenedor de password*/
-.passInputContainer{
-  width:80%;
-  margin-left: 35px;
-}
-/*inputs en general*/
-.inputText{
-  background-color: white;
+
+
+//color de fondo
+ion-item{
+  margin: 0px 0px 10px;
+  width: 100%;
+  background-color: none;
+  --ion-background-color: #E5E5E5;
   border-radius: 10px;
-  color: #000000;
 }
-/*botón de iniciar*/
-.iniciarButton{
-  background-color: #2027a8;
+
+ion-buttons{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ion-button{
+  background-color: aqua;
+  margin: 0px 0px 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iniciarButton{
+  background-color: #0007AC;
   color: white;
-  border-radius: 5px;
-  padding: 5px;
 }
-/*boton de registro*/
-.registrarButton{
+
+#registrarButton{
   background-color: #000000;
   color: white;
-  border-radius: 5px;
-  padding: 5px;
-}
-.buttons{
-  margin-left: 45px;
 }
