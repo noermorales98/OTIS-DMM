@@ -1,63 +1,66 @@
-ion-toolbar {
-  --background: transparent !important;
-  --ion-color-base: transparent !important;
-  --border-color: transparent;
-  --background-color: transparent !important;
+.container{
+  margin: auto;
+  width: 80%;
+  padding: 10px;
 }
 
-/*Boton de back*/
-.backButton{
-  height: 80px;
-  width: 80px;
-
-}
-
-/*Titulos*/
+/*titulos*/
 .titulo{
-  text-align: center;
+  margin-left: 40px;
   font-size: 40px;
-  font-weight: bold;
-
+  font-weight: bolder;
 }
 /*Contenedor de titulo*/
 .titles{
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 130px;
+  margin-bottom: 70px;
 }
-/*Contenedor de email para registrate*/
-.mailInputContainerRegister{
-  width: 80%;
-  margin-left: 35px;
-}
-/*contenedor de password*/
-.passInputContainer{
-  width:80%;
-  margin-left: 35px;
 
-}
-/*contenedor de confimacion de password*/
-.passConfirmInputContainer{
-  width:80%;
-  margin-left: 35px;
-}
-/*inputs en general*/
-.inputText{
-  background-color: white;
+
+//color de fondo
+ion-item{
+  margin: 0px 0px 10px;
+  width: 100%;
+  --ion-background-color: #E5E5E5;
   border-radius: 10px;
-  color: #000000;
+  color: #0007AC;
 }
-/*boton de registro*/
-.registrarButton{
-  background-color: #000000;
+
+@media (prefers-color-scheme: dark) {
+  ion-items{
+    color: black;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+  }  
+}
+
+ion-buttons{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ion-button{
+  margin: 0px 0px 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iniciarButton{
+  background-color: #0007AC;
   color: white;
-  border-radius: 5px;
-  padding: 5px;
-}
-.buttons{
-
 }
 
-
-
-
+#registrarButton{
+  //background-color: #000000;
+  color: white;
+  background-color:  var(--ion-color-dark);
+}
 

@@ -6,42 +6,35 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
-  <!--Titulo de la página-->
+<ion-content>
   <div class="titles">
-    <h1 class="titulo">Crea tu cuenta</h1>
+    <!--titulo de la página-->
+    <h1 class="titulo">Ingrese los campos</h1>
   </div>
 
-  <!--Sección para inputs de correo y contraseña-->
-  <ion-item class="mailInputContainerRegister">
-
-    <!--caracteres maximo de 50, restringir tipo de entrada a email-->
-    <ion-input maxlength="50" class="inputText" type="email" placeholder="Correo"></ion-input>
-  </ion-item>
-  <br>
-
-  <!--Caracteres maximos 16 min 6 tipo password-->
-  <ion-item class="passInputContainer">
-    <ion-input maxlength="16" minlength="6" class="inputText" type="password" placeholder="Contraseña"></ion-input>
-  </ion-item>
-  <br>
-
-  <!--Caracteres maximos 16 min 6 tipo password-->
-  <ion-item class="passConfirmInputContainer">
-    <ion-input maxlength="16" minlength="6" class="inputText" type="password" placeholder="Confirmar contraseña"></ion-input>
-  </ion-item>
-
-  <!--Boton para la confirmacion del registro-->
-  <ion-list lines="none">
-    <ion-buttons class="ion-justify-content-center">
-      <ion-item>
-        <ion-button class="registrarButton">Registrate</ion-button>
+<!--Sección para inputs de correo y contraseña-->
+  <div class="container">
+    <ion-list>
+      <ion-item  lines="none" color="medium">
+        <!--caracteres maximo de 50, restringir tipo de entrada a email-->
+        <ion-input type="email" placeholder="Correo"></ion-input>
       </ion-item>
-    </ion-buttons>
-  </ion-list>
-
-
+      <ion-item lines="none" color="medium">
+        <!--Caracteres maximos 16 min 6 tipo password-->
+        <ion-input class="inputText" type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+      <ion-item lines="none" color="medium">
+        <!--Caracteres maximos 16 min 6 tipo password-->
+        <ion-input class="inputText" type="password" placeholder="Repetir contraseña"></ion-input>
+      </ion-item>
+    </ion-list>
+    
+    <!--sección para botones de iniciar y registrod-->
+      <ion-buttons>
+        <div>
+          <ion-button color="light" id="registrarButton">Registrate</ion-button>
+        </div>
+      </ion-buttons>
+  </div>
 </ion-content>
-
-
