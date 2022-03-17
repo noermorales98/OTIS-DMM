@@ -1,4 +1,4 @@
-<ion-header >
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -10,28 +10,24 @@
 
   <div id="container">
     <div>
-      <h1>Tareas para [nombre]</h1>
+      <h1>Tareas para hoy</h1>
     </div>
-
-
       <div class="contenido">
-        <ion-item id="items" *ngFor="let aa of[1,1,1,1]">
+        <ion-item id="items" lines="none" *ngFor="let aa of[1,1,1,1]">
           <ion-card>
-            <ion-item>
-              <ion-icon  name="ellipse"> slot="start"></ion-icon>
-              <ion-label>Proyecto de IoT</ion-label>
-              <ion-button fill="outline" slot="end">Ver</ion-button>
-            </ion-item>
-
+            <ion-card-header>
+              <ion-card-title><ion-icon name="ellipse"></ion-icon>Nombre de la tarea</ion-card-title>
+            </ion-card-header>
             <ion-card-content>
-              <ion-icon color="black" name="calendar"> slot="start"></ion-icon>
-              24/02/2022
+              <div class="resumen">
+                <ion-icon id="calendar" name="calendar-outline" color="dark"></ion-icon>
+              <div id="fecha">24/02/2022</div>
+              </div>
             </ion-card-content>
           </ion-card>
 
         </ion-item>
       </div>
-
     </div>
 
 
