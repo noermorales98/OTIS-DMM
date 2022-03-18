@@ -1,43 +1,56 @@
-//Atributos del titulo en el toolbar
-ion-toolbar ion-label{
-  margin-left: 10px;
-  font-size: 23px;
+.container{
+  margin: auto;
+  width: 80%;
+  padding: 10px;
 }
 
-//texto que dice Fecha limite
-ion-item strong{
-  margin-bottom: 15px;
-  margin-top: 15px;
-  position: relative;
-  font-size: 18px;
-  margin-left: 10px;
+/*titulos*/
+.titulo{
+  margin-left: 50px;
+  font-size: 40px;
+  font-weight: bolder;
+  width: 60%;
+}
+/*Contenedor de titulo*/
+.titles{
+  margin-top: 130px;
+  margin-bottom: 70px;
 }
 
-//texto que dice nombre
-  ion-item ion-input{
-  margin-bottom: 15px;
-  margin-top: 15px;
-  font-size: 18px;
-  margin-left: 10px;
+
+//BORDES DE LOS INPUT
+ion-item{
+  margin: 0px 0px 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
-//Campo que dice descripción
-ion-item ion-textarea{
-  margin-bottom: 15px;
-  margin-top: 15px;
-  font-size: 18px;
-  margin-left: 10px;
-}
+//ALINEAR BOTON A LA DERECHA
+#registro{
+  justify-content: right;
+  margin-top: 50px;
+  width: 100%;
+  right: 1px;
+  }
 
-//Botón de agregar tarea
+//AJUSTAR TAMAÑO Y BORDE
 ion-button{
-  background-color: #0007AC;
-  position:fixed;
-  float: right;
-  width:auto;
-  height:60px;
-  bottom:40px;
-  right:40px;
-  text-align:center;
-  z-index: 1;
+  margin: 0px 0px 10px;
+  border-radius: 40px;
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
 }
+
+//COLOR DEL BOTON REGISTRATE
+#registrarButton{
+  color: white;
+  background-color:  var(--ion-color-primary);
+}
+
+//TAMAÑO DEL INPUT DESCRIPCION
+#description{
+  height: 100px;
+  vertical-align: bottom;
+}
+

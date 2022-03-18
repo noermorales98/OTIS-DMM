@@ -1,50 +1,52 @@
-<ion-header >
+<ion-header class="ion-no-border" slot="start">
   <ion-toolbar>
-    <ion-label> Informacion de tarea </ion-label>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button class="backButton"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<!--aqui ira todo el contenido-->
 <ion-content>
-
-  <div id="container"> <!--Contenido detro de container-->
-    <ion-item>
-      <ion-label position="stacked"></ion-label>
-
-      <ion-input placeholder="Nombre de la tarea"></ion-input>
-
-
-        <ion-item>
-          <ion-label>Fecha límite</ion-label>
-          <ion-card-content>
-            <ion-icon color="black" name="calendar"> slot="start"></ion-icon>
-            {{fecha}}
-          </ion-card-content>
-        </ion-item>
-
-
-
-
-      <ion-textarea rows="6" cols="20" placeholder="Descripción"></ion-textarea>
-
-    </ion-item>
-
-  </div>
-  <!--Botón de agregar tarea-->
-  <div class="actualizar" >
-    <ion-item>
-    <ion-button color="secondary">
-      Actualizar
-    </ion-button>
-
-    <ion-button  color="danger">
-       Borrar
-    </ion-button>
-    </ion-item>
+  <div class="titles">
+    <!--titulo de la página-->
+    <p>Nombre</p>
+    <h1 class="titulo">Nombre de la tarea</h1>
   </div>
 
-
+<!--Sección para inputs de correo y contraseña-->
+  <div class="container">
+    <ion-list>
+      <ion-label>Fecha</ion-label>
+      <ion-item lines="none" color="medium">
+        <ion-input
+          value="{{ date | date: 'dd.MM.yyyy' }}"
+          id="date"
+          class="ion-text-start"
+          placeholder="Fecha"
+        ></ion-input>
+        <ion-popover trigger="date" size="cover">
+          <ng-template>
+            <ion-datetime
+              presentation="date"
+              [(ngModel)]="date"
+            ></ion-datetime>
+          </ng-template>
+        </ion-popover>
+      </ion-item>
+      <ion-label>Descripción</ion-label>
+      <ion-item lines="none" color="medium">
+        <ion-textarea id="description" placeholder="Descripcion"></ion-textarea>
+      </ion-item>
+    </ion-list>
+    
+    <!--sección para botones de iniciar y registrod-->
+      <ion-buttons id="registro">
+        <div>
+          <ion-button color="light" id="actualizarButton">Actualizar</ion-button>
+        </div>
+        <div>
+          <ion-button color="light" id="BorrarButton">Borrar</ion-button>
+        </div>
+      </ion-buttons>
+  </div>
 </ion-content>
