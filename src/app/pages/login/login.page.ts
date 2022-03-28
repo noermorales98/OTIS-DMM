@@ -35,5 +35,23 @@ export class LoginPage implements OnInit {
     })
   }
   
+  ingresarGoogle(){
+    console.log(this.usuario);
+    const{email, password} = this.usuario;
+    this.authService.loginWithGoogle(email,password).then(res=>{
+      console.log(res);
+    })
+  }
+
+  logout(){
+    this.authService.getUserLogged().subscribe(res=>{
+      console.log(res?.email);
+    });
+  }
+
+  getUserLogged(){
+    this.authService.logout();
+  }
+
 
 }

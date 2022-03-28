@@ -21,8 +21,21 @@
           <ion-button id="iniciarButton" (click)="ingresar()">Iniciar</ion-button>
         </div>
         <div>
-          <ion-button color="light" id="registrarButton">Registrate</ion-button>
+          <ion-button id="iniciarButton" (click)="ingresarGoogle()">Iniciar con Google</ion-button>
         </div>
+        <div>
+          <ion-button color="light" (click)="registrar()" id="registrarButton">Registrate</ion-button>
+        </div>
+      </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-button (click)="getUserLogged()">
+          <ion-icon slot="start" name="add"></ion-icon>
+          Click me
+        </ion-button>
+        <ion-button (click)="logout()">
+          <ion-icon slot="start" name="remove"></ion-icon>
+          Logout
+        </ion-button>
       </ion-buttons>
   </div>
 </ion-content>
